@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bağlantılarım</title>
+    <!-- Logolar için FontAwesome kütüphanesi -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px 20px;
+            margin: 0;
+        }
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background-color: #2c2c2c;
+            margin-bottom: 20px;
+            object-fit: cover;
+            border: 3px solid #444;
+        }
+        .title {
+            font-size: 24px;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+        .link-container {
+            width: 100%;
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .link-btn {
+            display: flex;
+            align-items: center;
+            background-color: #1e1e1e;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 15px 20px;
+            border-radius: 10px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            border: 1px solid #333;
+        }
+        .link-btn:hover {
+            background-color: #333;
+            transform: translateY(-2px);
+        }
+        .link-btn i {
+            font-size: 24px;
+            width: 40px;
+            text-align: center;
+        }
+        .link-text {
+            flex-grow: 1;
+            text-align: center;
+            padding-right: 40px; /* Yazıyı tam ortalamak için ikon genişliği kadar boşluk */
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Kendi profil veya şirket logonun linkini buraya ekleyebilirsin -->
+    <img src="https://via.placeholder.com/120" alt="Logo" class="profile-img">
+    
+    <div class="title">Hoş Geldiniz</div>
+
+    <div class="link-container">
+        <!-- Web Sitesi -->
+        <a href="https://seninwebsiten.com" target="_blank" class="link-btn">
+            <i class="fas fa-globe"></i>
+            <span class="link-text">Web Sitemiz</span>
+        </a>
+        
+        <!-- Instagram -->
+        <a href="https://instagram.com/hesap_adi" target="_blank" class="link-btn">
+            <i class="fab fa-instagram"></i>
+            <span class="link-text">Instagram</span>
+        </a>
+
+        <!-- X (Twitter) -->
+        <a href="https://twitter.com/hesap_adi" target="_blank" class="link-btn">
+            <i class="fab fa-x-twitter"></i>
+            <span class="link-text">X (Twitter)</span>
+        </a>
+
+        <!-- TikTok -->
+        <a href="https://tiktok.com/@hesap_adi" target="_blank" class="link-btn">
+            <i class="fab fa-tiktok"></i>
+            <span class="link-text">TikTok</span>
+        </a>
+
+        <!-- Facebook -->
+        <a href="https://facebook.com/hesap_adi" target="_blank" class="link-btn">
+            <i class="fab fa-facebook-f"></i>
+            <span class="link-text">Facebook</span>
+        </a>
+    </div>
+
+</body>
+</html>
