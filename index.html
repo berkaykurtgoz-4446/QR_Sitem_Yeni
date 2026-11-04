@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bağlantılarım</title>
     <!-- Logolar için FontAwesome kütüphanesi -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <style>
         body {
             background-color: #121212;
@@ -65,42 +65,73 @@
             padding-right: 40px; /* Yazıyı tam ortalamak için ikon genişliği kadar boşluk */
             font-weight: 500;
         }
+        /* Minimalist Buton Arka Planı (Orijinal Koyu) */
+        .btn-web, .btn-ig, .btn-x, .btn-tt, .btn-fb {
+        background-color: #1e1e1e;
+        border: 1px solid #333;
+        }
+
+        /* Sadece İkonlara Renk Verilmesi */
+        .btn-web i { color: #4CAF50; }
+
+        .btn-ig i { 
+        background: -webkit-linear-gradient(45deg, #f09433, #dc2743, #bc1888);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        }
+
+        .btn-x i { color: #ffffff; }
+
+        .btn-tt i { 
+        color: #ffffff;
+        text-shadow: 1.5px 1.5px 0px #fe2c55, -1.5px -1.5px 0px #25F4EE;
+        }
+
+        .btn-fb i { color: #1877F2; }
+
+        /* Daha Sade Hover (Üzerine Gelme) Efekti */
+        .link-btn:hover {
+        transform: translateY(-2px);
+        background-color: #2a2a2a;
+        border-color: #555;
+        }
+
     </style>
 </head>
 <body>
 
     <!-- Kendi profil veya şirket logonun linkini buraya ekleyebilirsin -->
-    <img src="https://via.placeholder.com/120" alt="Logo" class="profile-img">
+    <img src="c:\Users\user\Downloads\unnamed-removebg-preview.png" alt="Logo" class="profile-img">
     
     <div class="title">Hoş Geldiniz</div>
 
     <div class="link-container">
         <!-- Web Sitesi -->
-        <a href="https://seninwebsiten.com" target="_blank" class="link-btn">
+        <a href="#" target="_blank" class="link-btn btn-web">
             <i class="fas fa-globe"></i>
             <span class="link-text">Web Sitemiz</span>
         </a>
         
         <!-- Instagram -->
-        <a href="https://instagram.com/hesap_adi" target="_blank" class="link-btn">
+        <a href="#" target="_blank" class="link-btn btn-ig">
             <i class="fab fa-instagram"></i>
             <span class="link-text">Instagram</span>
         </a>
 
         <!-- X (Twitter) -->
-        <a href="https://twitter.com/hesap_adi" target="_blank" class="link-btn">
-            <i class="fab fa-x-twitter"></i>
+        <a href="#" target="_blank" class="link-btn btn-x">
+            <i class="fa-brands fa-x-twitter"></i>
             <span class="link-text">X (Twitter)</span>
         </a>
 
         <!-- TikTok -->
-        <a href="https://tiktok.com/@hesap_adi" target="_blank" class="link-btn">
+        <a href="#" target="_blank" class="link-btn btn-tt">
             <i class="fab fa-tiktok"></i>
             <span class="link-text">TikTok</span>
         </a>
 
         <!-- Facebook -->
-        <a href="https://facebook.com/hesap_adi" target="_blank" class="link-btn">
+        <a href="#" target="_blank" class="link-btn btn-fb">
             <i class="fab fa-facebook-f"></i>
             <span class="link-text">Facebook</span>
         </a>
